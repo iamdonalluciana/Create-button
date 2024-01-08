@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            display: flex;
+            position: relative; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url('pic/back1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: blur(5px); 
+            z-index: -1;  
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .brand-logo {
+            margin-right: auto;
+        }
+
+        nav {
+            margin-bottom: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 5%;
+            margin-left: 32%;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+        .content{
+            margin-bottom: 20%;
+        }
+    </style>
+    <title>Personal Blog</title>
+</head>
+<body>
+    <nav class="black darker-1">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Yanicxx</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="cont.html">CONTACT</a></li>
+                <li><a href="create.html">BLOG</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <div class="content">
+    <h1>Create Blog</h1>
+
+    <a href="content.html">
+        <button id="createButton">Create</button>
+    </a>
+</div>
+</body>
+</html>
